@@ -1,21 +1,13 @@
-'use client';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import ProductsInput from '../components/ProductsInput';
 
 const products = ['pants', 'shirts', 'shoes'];
 
 const page = () => {
-  const [text, setText] = useState('');
-
-  const handleInput = (e: {
-    target: { value: React.SetStateAction<string> };
-  }) => {
-    setText(e.target.value);
-  };
   return (
     <div className="flex flex-col justify-center items-center space-y-3">
       <p className="text-3xl font-bold">products페이지</p>
-      <div>
+      {/* <div>
         <input
           type="text"
           className="border-2 p-3 w-[1000px]"
@@ -26,7 +18,8 @@ const page = () => {
       </div>
       <button className="p-3 border-2">
         <Link href={`products/${text}`}>동적 상세페이지</Link>
-      </button>
+      </button> */}
+      <ProductsInput />
       <div className="border-2">
         {products.map((product) => (
           <div key={product} className="border-2 p-3 m-3">
