@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import './globals.css';
+import Nav from './components/nav/Nav';
 
 export const metadata = {
   title: 'Create Next App',
@@ -17,20 +17,7 @@ export default function RootLayout({
         <title>OPENER</title>
       </head>
       <body>
-        <header className="bg-white text-black text-xl font-bold p-3 border-b-2">
-          <p>Hi I am in src/app/layout.tsx</p>
-          <p>
-            In layout.tsx you can add query, contextApi, navbar, footer... etc
-          </p>
-          <nav className="p-3 bg-red-100 rounded space-x-5">
-            <Link href="/" className="p-3 bg-red-300 rounded-full">
-              home
-            </Link>
-            <Link href="/intro" className="p-3 bg-red-300 rounded-full">
-              intro
-            </Link>
-          </nav>
-        </header>
+        <Nav />
         {children}
       </body>
     </html>

@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container {
+  @apply flex justify-center items-center flex-col border-2 m-3 p-3 border-green-200
+}
+
+.header {
+  @apply border-2 p-3 m-3 border-blue-300
+}
+
+h1 {
+  @apply font-bold text-3xl
+}
+
+.info {
+  @apply border-2 p-3 m-3 border-yellow-300
+}
