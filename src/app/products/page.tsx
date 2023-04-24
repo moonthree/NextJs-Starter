@@ -7,6 +7,7 @@ const page = () => {
   return (
     <div className="flex flex-col justify-center items-center space-y-3">
       <p className="text-3xl font-bold">products페이지</p>
+      <Link href={`products/inner-page?inner`}>페이지</Link>
       {/* <div>
         <input
           type="text"

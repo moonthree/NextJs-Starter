@@ -17,3 +17,17 @@ h1 {
 .info {
   @apply border-2 p-3 m-3 border-yellow-300
 }
+
+.mobile {
+  @apply max-w-screen-sm
+}
+
+.mobile-test {
+  @apply bg-green-300 font-bold text-3xl
+}
+
+@media screen and (min-width: 640px) {
+  .mobile-test {
+    @apply bg-red-300 text-sm
+  }
+}
